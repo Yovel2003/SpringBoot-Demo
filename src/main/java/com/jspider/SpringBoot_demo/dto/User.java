@@ -1,7 +1,13 @@
 package com.jspider.SpringBoot_demo.dto;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
 
+@Entity
 public class User {
+	@Id
+	@GeneratedValue
 	private int userid;
 	private String name;
 	private String contact;
